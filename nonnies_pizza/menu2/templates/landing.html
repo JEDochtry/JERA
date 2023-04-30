@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Restaurant Name - Home</title>
+    <link rel="stylesheet" href="{% static 'mystyles.css' %}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/menu2">Menu</a></li>
+          <li><a href="/menu2/menu">Reservations</a></li>
+          <li><a href="/members/">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Nonnies Pizza</h1>
+        <p>We're a restaurant that serves delicious food and drinks in a cozy atmosphere. Come visit us today!</p>
+        <a href="{% url 'menu' %}" class="button">View Menu</a>
+      </section>
+      <section class="features">
+        <div class="feature">
+          
+          <h2>Delicious Menu</h2>
+          <p>We offer a wide variety of dishes made from fresh, high-quality ingredients. You're sure to find something you love on our menu.</p>
+        </div>
+        <div class="feature">
+          
+          <h2>Easy Reservations</h2>
+          <p>Make a reservation online or by phone and we'll have a table waiting for you when you arrive.</p>
+        </div>
+        <div class="feature">
+          
+          <h2>Cozy Atmosphere</h2>
+          <p>Our restaurant has a warm and inviting atmosphere that's perfect for a romantic dinner or a night out with friends.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
