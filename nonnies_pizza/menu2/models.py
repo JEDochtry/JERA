@@ -22,3 +22,7 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name 
+
+class CartItem(models.Model):
+    item = models.ForeignKey(Item, on_delete=models.CASCADE)
+    quantity = models.PositiveIntegerField()

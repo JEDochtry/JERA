@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.template import loader
+from django.shortcuts import get_object_or_404
 from .models import MENU
-from .models import Category
+from .models import Category, CartItem, Item
 
 def menu2(request):
   mymembers = MENU.objects.all().values()
@@ -32,3 +33,7 @@ def menu(request):
     template = loader.get_template('menu.html')
     context = {'categories': categories}
     return HttpResponse(template.render(context, request))
+
+
+
+

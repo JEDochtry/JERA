@@ -11,6 +11,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+    background-color: #333;
   }
   
   h1, h2, h3 {
@@ -52,7 +53,7 @@
     background-image: url('../img/https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg');
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #333;
   }
   
   .hero h1 {
@@ -84,7 +85,7 @@
     width: 30%;
     text-align: center;
     padding: 2em;
-    background-color: #F2F2F2;
+    background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   

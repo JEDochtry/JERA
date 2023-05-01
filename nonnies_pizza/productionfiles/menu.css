@@ -1,0 +1,49 @@
+/* menu.css */
+
+body {
+    background-color: #f6f6f6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #fff 50%, #f6f6f6 50%);
+    z-index: -1;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
